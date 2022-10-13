@@ -2,14 +2,17 @@ package org.example;
 
 import lombok.Getter;
 import lombok.Setter;
-@Getter @Setter
+
+
+@Setter
 public class Flower {
-    @Getter @Setter
+    @Getter
     private double sepalLength;
     private FlowerColor color;
-    @Getter @Setter
+    @Getter
     private double price;
-
+    @Getter
+    private FlowerType FlowerType;
     public String getColor() {
         return color.toString();
     }
