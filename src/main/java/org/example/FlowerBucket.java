@@ -15,13 +15,10 @@ public class FlowerBucket {
 
     public double getPrice() {
         double price = 0;
-        if (bucket.size() != 0) {
-            for (int i = 0; i < bucket.size(); i++) {
-                price += bucket.get(i).getPrice();
-            }
-        } else {
-            return 0.0;
+        for (FlowerPack flowerPack: bucket) {
+            price += flowerPack.getPrice();
         }
         return price;
     }
+
 }

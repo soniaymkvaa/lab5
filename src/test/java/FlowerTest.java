@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class FlowerTest {
+public class FlowerTest {
     private Flower flower;
 
     @BeforeEach
@@ -22,8 +22,8 @@ class FlowerTest {
 
     @Test
     public void testColor() {
-        FlowerColor price = FlowerColor.RED;
-        flower.setColor(price);
+        FlowerColor color = FlowerColor.RED;
+        flower.setColor(color);
         assertEquals("#FF0000", flower.getColor());
     }
 }
