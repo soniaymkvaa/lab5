@@ -1,14 +1,8 @@
 package org.example;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.util.ArrayList;
-import java.util.List;
-
-@Getter@Setter
 public class FlowerBucket {
-    List<FlowerPack> bucket = new ArrayList<FlowerPack>();
+    private final ArrayList<FlowerPack> bucket = new ArrayList<>();
     public void add(FlowerPack flowerPack) {
         bucket.add(flowerPack);
     }
