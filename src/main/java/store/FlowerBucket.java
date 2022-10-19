@@ -1,8 +1,12 @@
 package store;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 public class FlowerBucket {
-    private final ArrayList<FlowerPack> bucket = new ArrayList<>();
+    @Setter @Getter
+    private ArrayList<FlowerPack> bucket = new ArrayList<>();
     public void add(FlowerPack flowerPack) {
         bucket.add(flowerPack);
     }
@@ -14,5 +18,4 @@ public class FlowerBucket {
         }
         return price;
     }
-
 }
