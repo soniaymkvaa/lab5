@@ -1,4 +1,4 @@
-package org.example;
+package store;
 
 import java.util.ArrayList;
 public class FlowerBucket {
